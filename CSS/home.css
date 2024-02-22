@@ -1,71 +1,132 @@
-/* Apply a web font to all paragraphs */
-p {
-    font-family: 'Your Chosen Web Font', sans-serif;
+/* Import Google Font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Apply font color and font weight to all lists */
-ul, ol {
-    color: #333; 
-    font-weight: 500; 
+/* Basic reset for padding and margin */
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
-/* Transform text in all h1 elements to uppercase and set letter spacing */
-h1 {
-    text-transform: uppercase;
-    letter-spacing: 2px; 
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 10;
 }
 
-/* Apply text shadow to all h1 elements */
-h1 {
-    text-shadow: 2px 2px 4px #666; 
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-
-p {
-    line-height: 1.6; 
-    text-align: left; 
+.navbar li {
+    margin-right: 20px;
 }
 
-/* Set the text-decoration style for links */
-a {
+.navbar a {
+    color: white;
     text-decoration: none;
 }
 
-/* Apply special style to all links on hover */
-a:hover {
-    color: #ff6600; 
+/* Introduction section with some spacing for readability */
+.introduction {
+    position: fixed;
+    top: 50px; /* Adjusted to not overlap with navbar */
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    z-index: 5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Display the navigation list in one line */
-.navbar ul li {
-    display: inline;
-    margin-right: 20px; 
+/* Floating image to the right */
+.introduction img {
+    float: right;
+    margin-left: 20px;
+    width: 200px; /* Adjust size as needed */
+    height: auto;
 }
 
-/* Add border-right and border-bottom to specific sections */
-.assignment, .portfolio, .contact, .schedule {
-    border-right: 3px solid #fff; 
-    border-bottom: 3px solid #fff; 
+/* Adjustment for content sections to ensure they do not overlap with fixed intro */
+.content {
+    margin-top: 250px; /* Adjust based on the actual height of your introduction section */
 }
 
-/* Add rounded corner border to list items in navigation section */
-.navbar ul li {
-    border-radius: 10px;
-    padding: 5px; 
+/* Portfolio section */
+#portfolio {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
 }
 
-/* Add rounded corner border to h1 elements */
-h1 {
-    border-radius: 10px; 
-    padding: 10px; 
+/* Schedule section styling */
+#schedule {
+    background-color: #f7f7f7;
+    padding: 20px;
 }
 
-/* Create a transition for h1 elements */
-h1 {
-    transition: all 0.3s ease-in-out; 
+/* Styling for tables to make them more readable */
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* Apply a transform rule to h1 elements on hover */
-h1:hover {
-    transform: scale(1.1); 
+table, th, td {
+    border: 1px solid #ddd;
 }
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Assignment section */
+#assignment {
+    background-color: #eee;
+    padding: 20px;
+}
+
+/* Contact section */
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px; /* Space from the preceding section */
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+
+
+
+
+
