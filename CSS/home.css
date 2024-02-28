@@ -41,40 +41,70 @@ body, html {
     text-decoration: none;
 }
 
-/* Introduction section with some spacing for readability */
 .introduction {
-    position: fixed;
-    top: 50px; /* Adjusted to not overlap with navbar */
-    left: 0;
-    width: 100%;
-    padding: 20px;
+    position: relative;
+    padding: 10px 20px; /* Reduced top and bottom padding */
     background-color: #f9f9f9;
-    z-index: 5;
+    z-index: 1;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Floating image to the right */
+.introduction p {
+    width: 50%;
+    float: left;
+    margin: 0; /* Add this if you want to remove default margins */
+    /* Optionally adjust line height and font size if necessary */
+    line-height: 1.2; /* Example line-height, adjust as needed */
+    padding-top: 8px; /* Add padding to push the text down */
+    font-size: 1em; /* Example font-size, adjust as needed */
+}
+
+/* Adjust the .content class margin-top if necessary due to the change in .introduction padding */
+.content {
+    margin-top: 20px; /* Adjust this value if needed */
+}
+
+
 .introduction img {
     float: right;
-    margin-left: 20px;
+    margin-left: 0px;
     width: 200px; /* Adjust size as needed */
-    height: auto;
+    height: 200px;
 }
+
 
 /* Adjustment for content sections to ensure they do not overlap with fixed intro */
 .content {
     margin-top: 250px; /* Adjust based on the actual height of your introduction section */
 }
+/* assignment */
+.assignment {
+    position: absolute;
+    top: 350px;
+    right: 0;
+    width: 40%;
+
+
+}
+
 
 /* Portfolio section */
 #portfolio {
     background-color: #f0f0f0;
     padding: 20px;
     margin-bottom: 20px; /* Space between sections */
+    position: absolute;
+    top: 350px;
+    left: 0;
+    width: 60%;
 }
 
 /* Schedule section styling */
 #schedule {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    width: 60%;
     background-color: #f7f7f7;
     padding: 20px;
 }
@@ -111,7 +141,14 @@ th {
     padding: 20px;
     margin-top: 20px; /* Space from the preceding section */
 }
+/* Align the contact information to the right under the header */
+#contact h1 {
+    text-align: right; /* Aligns the header to the right */
+}
 
+#contact p {
+    text-align: right; /* Aligns the paragraphs to the right */
+}
 /* Footer styles */
 footer {
     position: fixed;
